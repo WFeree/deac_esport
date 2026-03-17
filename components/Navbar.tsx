@@ -13,7 +13,7 @@ export default function Navbar() {
     <Link href={href} className="relative group">
       <Button variant="ghost" className={`relative px-2 ${isActive(href) ? "text-black font-semibold" : ""}`}>
         {label}
-        <span className={`absolute left-0 -bottom-1 h-[2px] bg-black transition-all duration-300 ${isActive(href) ? "w-full" : "w-0 group-hover:w-full"}`}/>
+        <span className={`absolute left-0 -bottom-1 h-0.5 bg-black transition-all duration-300 ${isActive(href) ? "w-full" : "w-0 group-hover:w-full"}`}/>
       </Button>
     </Link>
   );
