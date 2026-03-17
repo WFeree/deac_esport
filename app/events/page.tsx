@@ -1,6 +1,6 @@
 const page = () => {
   return (
-    <div>Events</div>
+    <h1 className="font-bold text-4xl text-center">Események</h1>
   )
 }
 

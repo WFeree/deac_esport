@@ -1,6 +1,6 @@
 const page = () => {
   return (
-    <div>About</div>
+    <h1 className="font-bold text-4xl text-center">Rólunk</h1>
   )
 }
 

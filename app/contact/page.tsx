@@ -1,6 +1,6 @@
 const page = () => {
   return (
-    <div>Contact</div>
+    <h1 className="font-bold text-4xl text-center">Kapcsolat / Jelentkezés</h1>
   )
 }
 

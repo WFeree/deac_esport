@@ -2,7 +2,8 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div>Teams</div>
+    <h1 className="font-bold text-4xl text-center">Csapataink</h1>
+
   )
 }
 
