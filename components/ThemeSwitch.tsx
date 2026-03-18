@@ -1,5 +1,6 @@
 'use client'
 
+import { Moon, MoonIcon, Sun } from 'lucide-react'
 import { useTheme } from 'next-themes'
 import { useEffect, useState } from 'react'
 
@@ -12,8 +13,10 @@ export default function ThemeSwitch() {
   if (!mounted) return null
 
   return (
-    <button className='dark:text-black' onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
-      {theme === 'dark' ? 'Light' : 'Dark'} Mode
+    <button className='border p-2 rounded-md hover:cursor-pointer inline-flex gap-2' onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
+      <span>{theme === "dark" ? "Világos mód" : "Sötét mód"}</span>
+      <MoonIcon className="block dark:hidden w-5" />
+      <Sun className="hidden dark:block w-5" />
     </button>
   )
 }
