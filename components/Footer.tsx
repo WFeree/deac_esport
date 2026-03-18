@@ -4,9 +4,9 @@ import Link from "next/link"
 import ThemeSwitch from "./ThemeSwitch"
 import { Button } from "./ui/button"
 
-const Footer = () => {
+export default function Footer(){
   return (
-    <footer className="h-fit py-5 px-60  bg-white border dark:bg-[#121212]">
+    <footer className="h-fit py-5 px-60  bg-white border-t dark:bg-[#121212]">
       <div id="top" className="grid grid-cols-3 items-center">
           <div id="logo">
             <div className="flex gap-4 items-center mb-4">
@@ -15,14 +15,18 @@ const Footer = () => {
             </div>
             <p>1919 óta a sport szolgálatában!</p>
           </div>
-          <div id="partners">
-            <img src="/de.png" className="max-h-10"/>
+          <div id="partners" className="flex gap-4 items-center">
+            {/* <a href="https://unideb.hu/" className="flex-1 h-18 flex items-center justify-center border rounded-md p-2">
+              <img src="/de.png" className="max-h-full object-contain" />
+            </a>
+            <a href="https://hunesz.hu/hu" className="flex-1 h-18 flex items-center justify-center border rounded-md p-2">
+              <img src="/hunesz_light.png" className="block dark:hidden max-h-full object-contain" />
+              <img src="/hunesz_dark.png" className="hidden dark:block max-h-full object-contain" />
+            </a>  */}
           </div>
-          <div id="right" className="ml-auto">      <ThemeSwitch></ThemeSwitch></div>
+          <div id="right" className="ml-auto"><ThemeSwitch></ThemeSwitch></div>
       </div>
-      
       <Separator className="my-5"/>
-      
       <div className="flex justify-between" id="bottom">
         <div className="flex gap-6 items-center">
           <p className="text-black dark:text-white">DEAC Esport 2026 &copy;</p>
@@ -65,6 +69,3 @@ const Footer = () => {
     </footer>
   )
 }
-
-export default Footer
-

@@ -19,7 +19,7 @@ export default function Navbar() {
   );
 
   return (
-    <nav className="h-20 border flex items-center justify-between px-60 bg-white mb-4
+    <nav className="h-20 border-b flex items-center justify-between px-60 bg-white mb-4 left-0 top-0
     dark:bg-[#121212]">
       <Link className="flex items-center gap-4" href="/">
         <Image src="/DEACBadge.png" alt="DEAC logo" width="60" height="60" />
